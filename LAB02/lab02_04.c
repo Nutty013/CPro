@@ -13,6 +13,7 @@ main()
         scanf("%d", &a[i]);
     }
 
+
 	for(i=0; i<k; i++){
 		sum = sum + a[i];
 	}
