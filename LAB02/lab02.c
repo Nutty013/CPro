@@ -30,9 +30,11 @@ main() {
         for (i = 0; i < count; i++) {
         printf("%d", a[i]);
 
-        if (i < count - 1) {
+
+
+        /*if (i < count - 1) {
             printf(" ");
-        }
+        }*/
     }
 
 	printf("\n");
