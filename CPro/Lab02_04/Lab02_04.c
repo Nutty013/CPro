@@ -3,7 +3,7 @@
 main()
 {
     int a[100];
-    int n, i, k;
+    int n, i, j, k;
     float sum ;
 
 	scanf("%d", &n);
@@ -13,13 +13,18 @@ main()
         scanf("%d", &a[i]);
     }
 
-
-	for(i=0; i<k; i++){
-		sum = sum + a[i];
-	}
+	for (i = 0; i <= n - k; i++) {
+        sum = 0;
+		for(j=i; j<i+k; j++){
+			sum = sum + a[j];
+		}
 
 	sum = sum/k;
 
-	printf("%.2f \n",sum);
+	printf("%.2f ",sum);
+
+	}
+
+	printf("\n");
 
 }
